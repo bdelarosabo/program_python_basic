@@ -20,6 +20,7 @@ if tiempo_caminado > 0:
     velocidad = (distancia / 100000) / (tiempo_caminado / 60)   # km/h
 else:
     velocidad = 0
+    print("____________________________________________________________________________________________________")
 
 if pasos >= META_PASOS_DIARIOS:
     print(f"Felicidades {nombre} lograste la meta de pasos diarios hiciste {pasos} pasos el dia de hoy.")
@@ -27,9 +28,14 @@ if pasos >= META_PASOS_DIARIOS:
     print(f"{nombre} La velocidad aproximada que tuviste hoy fue de {velocidad:.2f} km/h")
     print(f"{nombre} Las calorias quemadas aproximadamente es de {calorias_quemadas:.1f} calorias quemadas.")
 else:
+    print("____________________________________________________________________________________________________")
     print(f"{nombre} Tienes que mejorar el ritmo y la cantidad de pasos no lograste la meta diaria.")
+    print(f"Hiciste {pasos} pasos el dia de hoy.")
+    print(f"{nombre} La distancia aproximada que recorriste hoy fue de {distancia / 100:.2f} mts")
+    print(f"{nombre} La velocidad aproximada que tuviste hoy fue de {velocidad:.2f} km/h")
+    print(f"{nombre} Las calorias quemadas aproximadamente es de {calorias_quemadas:.1f} calorias quemadas.")
 #__________________________________________________________________________________________________________________________________
-# SEGUNDO PROGRAMA V1.1 EN PROCESO.
+# SEGUNDO PROGRAMA V1.1 FINALIZADO.
 guion = "_"
 print(guion * 90)
 print("SISTEMA DE RESERVA DE HOTEL")
@@ -63,3 +69,57 @@ else:
     print('La respuesta ingresada es erronea, ingrese correctamente si desea un cuarto con vista al mar o no responda "SI" o "NO".')
 print("Gracias por usar nuestro programa.")
 
+#________________________________________________________________________________________
+# PROGRAMA 3 V2.0 FINALIZADO.
+guion = "_"
+print(guion * 90)
+print("BIENVENIDO AL PROGRAMA DEL NUMERO MAYOR")
+print(guion * 90)
+numero1 = int(input("Indiqueme por favor un numero entero: ")) 
+numero2 = int(input("Indiqueme por favor el segundo numero entero: "))
+if numero1 > numero2:
+    print(f"El numero mayor es: {numero1}") 
+else:
+    print(f"El numero mayor es el: {numero2}")
+print("GRACIAS POR USAR MI PROGRAMA")
+#__________________________________________________________________________________________
+# PROGRAMA 4 V2.1 finalizado.
+guion = "_"
+print(guion * 90)
+print("IDENTIFICADOR DE ESTACIONES DEL AÑO")
+print(guion * 90)
+mes = int(input("Indiqueme el numero del mes del 1 al 12: ").strip())
+
+if mes < 1 or mes > 12:
+    print("Este numero no corresponde a ningun mes, digite un numero de mes correcto.")
+elif mes == 1 or mes == 2 or mes == 12:
+    print("Se encuentra en la estación de invierno.")
+elif mes == 3 or mes == 4 or mes == 5:
+    print("Se encuentra en la estación de primavera.")
+elif mes == 6 or mes == 7 or mes == 8:
+    print("Se encuentra en la estación de verano.")
+elif mes == 9 or mes == 10 or mes == 11:
+    print("Se encuentra en la estación de otoño.")
+else:
+    print("Indique un caracter valido")
+print("Gracias por usar nuestro programa.")
+#_________________________________________________________________________________________________
+# PROGRAMA 5 V2.2 EN PROCESO.
+guion = "_"
+print(guion * 90)
+print("BIENVENIDOS AL PROGRMA DE SISTEMA DE CALIFICACIONES")
+print(guion * 90)
+calificacion = int(input("Ingresa por favor la calificación entre 0 y 10: ").strip())
+if calificacion >= 9 and calificacion <= 10:
+    print("Su calificación es: A ")
+elif calificacion >= 8:
+    print("Su calificación es: B ")
+elif calificacion >= 7:
+    print("Su calificación es C ")
+elif calificacion >= 6:
+    print("Su calificación es D ")
+elif calificacion >= 0:
+    print("Su calificación es F")
+else:
+    print("VALOR DESCONOCIDO")
+print("Gracias por usar mi programa.")
