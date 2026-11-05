@@ -1,3 +1,4 @@
+# PRIMER PROGRAMA V1.0 FINALIZADO EXITOSAMENTE.
 guion = "_"
 print(guion * 90)
 print("BIENVENIDO A MI PROGRAMA DE SALUD Y FITNESS")
@@ -27,3 +28,13 @@ if pasos >= META_PASOS_DIARIOS:
     print(f"{nombre} Las calorias quemadas aproximadamente es de {calorias_quemadas:.1f} calorias quemadas.")
 else:
     print(f"{nombre} Tienes que mejorar el ritmo y la cantidad de pasos no lograste la meta diaria.")
+#__________________________________________________________________________________________________________________________________
+# SEGUNDO PROGRAMA V1.1 EN PROCESO.
+print(guion * 90)
+print("SISTEMA DE RESERVA DE HOTEL")
+print(guion * 90)
+nombre = input("Indiqueme por su nombre: ").strip()
+dias = int(input("Indiqueme por favor los dias de estadia en el hotel: ").strip())
+cuarto = input("Desea la habitacion con vista al mar (SI/NO): ").strip().upper()
+
+
