@@ -123,3 +123,11 @@ elif calificacion >= 0:
 else:
     print("VALOR DESCONOCIDO")
 print("Gracias por usar mi programa.")
+
+#________________________________________________________________________________________________________
+#   SISTEMA DE ENVIO
+
+destino = input("El destino de su paquete es (Nacional o internacional?): ").lower().strip()
+peso = float(input("Indiqueme por favor el peso del paquete en kg: ").strip())
+tarifa_nacional = 10000
+tarifa_internacional = 20000
