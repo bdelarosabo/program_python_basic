@@ -174,7 +174,7 @@ print(guion * 90)
 print("BIENVENIDOS AL SISTEMA DE AUTENTICACIÓN DE USUARIO DE POSITIVA.")
 print(guion * 90)
 print()
-USUARIO = "bdelarosa"
+USUARIO = "COLVENEZUELA"
 PASSWORD = "12345678"
 user = input("Por favor ingrese su nombre de usuario: ").strip()
 contrasena = input("Ingrese su contraseña: ").strip()
