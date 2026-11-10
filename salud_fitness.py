@@ -133,14 +133,34 @@ peso = float(input("Indiqueme por favor el peso del paquete en kg: ").strip())
 tarifa_nacional = 10000
 tarifa_internacional = 20000
 #________________________________
+#   SISTEMA DE ENVIO
+print("BIENVENIDOS A SERVIENTREGA ¡¡garantizamos tu entrega!!")
+guion = "_"
+print(guion * 90)
+print()
+destino = input("El destino de su paquete es (Nacional o internacional?): ").upper().strip()
+peso = float(input("Indiqueme por favor el peso del paquete en kg: ").strip())
+tarifa_nacional = 5000
+tarifa_internacional = 10000
+print(guion * 90)
+print()
+print(guion * 90)
 if destino == "NACIONAL":
     costo = peso * tarifa_nacional
-    print (f"El costo total del envio es: ${costo}")
+    print("\t\tFACTURA ELECTRONICA")
+    print (f"El costo total del envio es: COP$ {costo:,.2f} Pesos colombianos.")
+    print (f"El peso del envio es {peso} kg.")
     print("Gracias por confiar en servientrega")
+    print()
+    print(guion * 90)
 elif destino == "INTERNACIONAL":
     costo = peso * tarifa_internacional
-    print (f"El costo total del envio es ${costo}")
+    print("\t\tFACTURA ELECTRONICA")
+    print (f"El costo total del envio es COP$ {costo:,.2f} Pesos colombianos.")
+    print(f"El peso de su paquete es: {peso} kg.")
     print("Gracias por confiar en servientrega")
+    print()
+    print(guion * 90)
 else:
     print("Su Respuestas no son validas por favor vuelva a intentarlo.")
 print(guion * 90)
