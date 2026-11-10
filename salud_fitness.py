@@ -166,3 +166,32 @@ else:
 print(guion * 90)
 print("GRACIAS POR ESCOGERNOS COMO SU ALIDO PUEDE COMUNICARSE CON NOSOTROS POR LA LINEA: 909191401")
 print(guion * 90)
+#_____________________________________________________________________________________________________
+# SISTEMA DE AUTENTICACION 
+guion = "_"
+print(guion * 90)
+print("BIENVENIDOS AL SISTEMA DE AUTENTICACIÓN DE USUARIO DE POSITIVA.")
+print(guion * 90)
+print()
+USUARIO = "bdelarosa"
+PASSWORD = "12345678"
+user = input("Por favor ingrese su nombre de usuario: ").strip()
+contrasena = input("Ingrese su contraseña: ").strip()
+if USUARIO == user and PASSWORD == contrasena:
+    print(guion * 90)
+    print()
+    print("BIENVENIDOS A LA BASE DE DATOS DE POSITIVA")
+    print(guion * 90)
+    print("Gracias por usar positiva compañia de seguros.")
+elif USUARIO != user:
+    print()
+    print(guion * 90)
+    print("Usuario invalido.")
+elif PASSWORD != contrasena:
+    print("Contraseña invalida.")
+else:
+    print("Usuario y contraseña invalidos.")
+print()
+print("Gracias por hacercarse mas a positiva compañia de seguros!!")
+
+
