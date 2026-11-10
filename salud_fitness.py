@@ -168,6 +168,7 @@ print("GRACIAS POR ESCOGERNOS COMO SU ALIDO PUEDE COMUNICARSE CON NOSOTROS POR L
 print(guion * 90)
 #_____________________________________________________________________________________________________
 # SISTEMA DE AUTENTICACION 
+# SISTEMA DE AUTENTICACION 
 guion = "_"
 print(guion * 90)
 print("BIENVENIDOS AL SISTEMA DE AUTENTICACIÓN DE USUARIO DE POSITIVA.")
@@ -183,6 +184,9 @@ if USUARIO == user and PASSWORD == contrasena:
     print("BIENVENIDOS A LA BASE DE DATOS DE POSITIVA")
     print(guion * 90)
     print("Gracias por usar positiva compañia de seguros.")
+elif PASSWORD != contrasena and USUARIO != user:
+    print("Usuario y contraseña invalido.")
+    print(guion * 90)
 elif USUARIO != user:
     print()
     print(guion * 90)
@@ -190,8 +194,6 @@ elif USUARIO != user:
 elif PASSWORD != contrasena:
     print("Contraseña invalida.")
 else:
-    print("Usuario y contraseña invalidos.")
-print()
-print("Gracias por hacercarse mas a positiva compañia de seguros!!")
-
+    print()
+    print("Su respuesta no concuerda con ninguna de las opciones vuelva a intentarlo.")
 
