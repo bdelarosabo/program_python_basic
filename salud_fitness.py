@@ -126,8 +126,23 @@ print("Gracias por usar mi programa.")
 
 #________________________________________________________________________________________________________
 #   SISTEMA DE ENVIO
-
-destino = input("El destino de su paquete es (Nacional o internacional?): ").lower().strip()
+print("BIENVENIDOS A SERVIENTREGA ¡¡garantizamos tu entrega!!")
+guion = "_"
+destino = input("El destino de su paquete es (Nacional o internacional?): ").upper().strip()
 peso = float(input("Indiqueme por favor el peso del paquete en kg: ").strip())
 tarifa_nacional = 10000
 tarifa_internacional = 20000
+#________________________________
+if destino == "NACIONAL":
+    costo = peso * tarifa_nacional
+    print (f"El costo total del envio es: ${costo}")
+    print("Gracias por confiar en servientrega")
+elif destino == "INTERNACIONAL":
+    costo = peso * tarifa_internacional
+    print (f"El costo total del envio es ${costo}")
+    print("Gracias por confiar en servientrega")
+else:
+    print("Su Respuestas no son validas por favor vuelva a intentarlo.")
+print(guion * 90)
+print("GRACIAS POR ESCOGERNOS COMO SU ALIDO PUEDE COMUNICARSE CON NOSOTROS POR LA LINEA: 909191401")
+print(guion * 90)
